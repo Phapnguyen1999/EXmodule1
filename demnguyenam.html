@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim ky tu nguyen am</title>
+</head>
+
+<body>
+    <script>
+        let array = ["d", "s", "u", "j", "d", "o"];
+        let string = 'nguyenquoc';
+        function count(array) {
+            let count = 0;
+            for (let i = 0; i < array.length; i++) {
+                switch (array[i]) {
+                    case "a":
+                    case "o":
+                    case "e":
+                    case "u":
+                    case "i":
+                        {
+                            count++;
+                            break;
+                        };
+                }
+            }
+            document.write(`So phan tu nguyen am trong mang la: ${count} <br>`)
+        }
+        count(array);
+        count(string);
+    </script>
+</body>
+
+</html>

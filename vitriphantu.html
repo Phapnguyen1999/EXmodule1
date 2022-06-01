@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim vi tri phan tu</title>
+</head>
+
+<body>
+    <script>
+        let number = 8;
+        let array = [9, 4, 2, 7, 10, 8];
+        function index(number, array) {
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] == number) {
+                    document.write(`Vi tri cua ${number} trong mang la: ${i}`);
+                    break;
+                }
+            }
+        }
+        index(number, array)
+    </script>
+</body>
+
+</html>

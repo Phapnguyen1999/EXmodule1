@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phuong trinh bac hai</title>
+</head>
+
+<body>
+    <script>
+        let a = 8;
+        let b = 12;
+        let c = -20;
+        function ptb2() {
+            let denta = b * b - 4 * a * c;
+            let x, x1, x2;
+            if (denta > 0) {
+                x1 = (-b + Math.sqrt(denta)) / (2 * a);
+                x2 = (-b - Math.sqrt(denta)) / (2 * a);
+                document.write(`Phuong trinh ${a}x2+${b}x${c}=0 co 2 nghiem : ${x1}, ${x2} `);
+            } else {
+                if (denta = 0) {
+                    x = (-b) / 2 * a;
+                    document.write(`Phuong trinh ${a}x2+${b}x-${c}=0 co 1 nghiem : ${x}`)
+                } else {
+                    document.write('vo nghiem')
+                }
+            }
+        }
+        ptb2(a, b, c);
+    </script>
+</body>
+
+</html>

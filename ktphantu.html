@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kiem tra phan tu trong mang</title>
+</head>
+
+<body>
+    <script>
+        let array = [7, 19, 7, 28, 32];
+        let number = 35;
+        let count = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (number == array[i]) {
+                count++;
+            }
+        }
+        if (count > 0) {
+            document.write(`Phan tu ${number} co trong mang`);
+        } else {
+            document.write(`Phan tu ${number} khong co trong mang`);
+        }
+    </script>
+</body>
+
+</html>
